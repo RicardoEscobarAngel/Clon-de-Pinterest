@@ -1,0 +1,296 @@
+@import url(./fonts/index.css);
+
+html, body{
+    box-sizing: border-box;
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'League Spartan', sans-serif;
+    line-height: 16px;
+}
+
+*:before, *:after{
+    box-sizing: inherit;
+}  
+
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+
+body::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ababab;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+
+nav {
+    background-color: white;
+    position: fixed;
+}
+
+nav div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#search {
+    display: flex;
+    font-size: 16px;
+    margin: 5px;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    Margin: 10px;
+    height: 100%;
+    border: 4px solid transparent;
+    border-radius: 999px;
+    background-color: #e1e1e1;
+    width: 50%;
+}
+
+.search_bar:active {
+    border: 4px solid #7fc1ff;
+}
+
+#search_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+    height: 45px;
+    background-color: none;
+    border: transparent;
+    padding: 0 0 0 5px;
+}
+
+.finder{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 8px 8px 8px 16px;
+    flex-grow: 1;
+    width: 100%;
+    font-size: 16px;
+  
+}
+
+.cancel_form {
+    background-image: url(../assets/cancelform.png);
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+
+}
+ol {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.top_left {
+    margin: 5px;
+    padding: 0;
+}
+
+li {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.explore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore_profiles {
+    /* margin: 0; */
+    padding: 0;
+}
+
+.logo_pinterest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.b1 {
+    font-weight: 500;
+    border-bottom: 3px solid #111111;
+    padding-bottom: 10px;
+}
+
+.b2 {
+    font-weight: 500;
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+.arrow_down {
+    background-image: url(../assets/arrow_down.png);
+    background-size: cover;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.notifications {
+    background-image: url(../assets/notifications.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
+.messages {
+    background-image: url(../assets/messages.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.profile_circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.profile_circle:hover, .logo_pinterest:hover {
+    background-color: #e9e9e9;
+    border-radius: 999px;
+    transform: scale(2.1);
+}
+    
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9e9e9;
+    border-radius: 999px;
+    font-size: 12px;
+    color: rgb(33, 25, 34);
+    width: 24px;
+    height: 24px;
+}
+
+.accounts {
+    background-image: url(../assets/accounts.png);
+    background-size: cover; 
+    margin-right: 40px;
+    width: 25px;
+    height: 16px;
+}
+
+.continue {
+    background-image: url(../assets/continue_arrow.png);
+    background-size: cover;
+    width: 16px;
+    height: 25px;
+}
+
+.suggestions {
+    display: flex;
+}
+
+.suggestions ol {
+    width: 100vw;
+    overflow-x: scroll;
+}
+
+.suggestions ol::-webkit-scrollbar {
+    width: 2px;
+  }
+
+.suggestions ol::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+.suggestions ol::-webkit-scrollbar-thumb {
+    background-color: #ababab;
+    border-radius: 10px;
+    border: 5px solid #ffffff;
+  }
+
+.suggestions ol li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14;
+    color: white;
+    font-weight: 500;
+    white-space: nowrap;
+    border-radius: 999px;
+    cursor: pointer;
+    background-color: rgb(157, 131, 87);
+    padding: 20px;
+    margin: 4px;
+}
+
+.suggestions ol li .continue{
+    background-color: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 250px;
+
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+img {
+    padding: 10px; 
+    display: flex;
+    width: 90%;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+main img:hover {
+    filter: brightness(0.6)
+}
